@@ -151,7 +151,7 @@ button{
         <h3>Are You Manger Or Employee...?</h3>
 
         <button type="button" onclick="MangerLogin()" >Manger</button>
-        <button type="button" onclick="employeeLogin()">Employee</button>
+        <button type="button" id="employeeLoginBtn">Employee</button>
 
 
        
@@ -163,8 +163,12 @@ button{
         }
 
         function employeeLogin(){
-            window.location.href = './html/Elogin.html';
+            window.location.href = '/html/Elogin.html';
         }
+
+        document.getElementById('employeeLoginBtn').addEventListener('click', function() {
+            window.location.href = './html/employee_login.html';
+        });
     </script>
 </body>
 </html>
