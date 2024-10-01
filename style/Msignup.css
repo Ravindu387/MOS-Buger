@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <!-- Design by foolishdeveloper.com -->
-        <title></title>
-     
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-        <!--Stylesheet-->
-        <style media="screen">
-          *,
+*,
     *:before,
     *:after{
         padding: 0;
@@ -19,7 +8,7 @@
     body{
         background-color: #080710;
         background-color: #080710;
-       background: url(../img/back2.png) no-repeat center center fixed; 
+      background: url(../img/back2.png) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -59,7 +48,7 @@
         bottom: -80px;
     }
     form{
-        height: 530px;
+        height: 590px;
         width: 400px;
         background-color: rgba(255,255,255,0.13);
         position: absolute;
@@ -88,7 +77,7 @@
     
     label{
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 16px;
         font-weight: 500;
     }
@@ -99,7 +88,7 @@
         background-color: rgba(255,255,255,0.07);
         border-radius: 3px;
         padding: 0 10px;
-        margin-top: 8px;
+        margin-top: 2px;
         font-size: 14px;
         font-weight: 300;
     }
@@ -107,7 +96,7 @@
         color: #e5e5e5;
     }
     button{
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
         background-color: #ffffff;
         color: #080710;
@@ -146,30 +135,4 @@
         margin-top: 20px;
         text-align: center;    
     }
-        </style>
-    </head>
-    
-    <form>
-        <h3>Manger Login </h3>
-
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
-
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
-
-        <p>
-            <a href="#">Forgot Password?</a>
-        </p>
-
-        <button>Log In</button><br><br>
-
-        <p class="account">
-            Don't have an account? <a href="Msignup.html">Sign up</a>
-        </p>
-
         
-        
-    </form>
-</body>
-</html>
