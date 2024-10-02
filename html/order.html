@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <!-- Design by foolishdeveloper.com -->
+        <title></title>
+     
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style/order.css">
+    </head>
+    <body>
+        <a href="Eprofile.html">
+            <button id="back"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+              </svg>Back</button>
+        </a>
+      
+    
+    <form id="burgerOrderForm">
+        <h1>Place Your Burger Order</h1>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="burgerType">Burger Type:</label>
+            <select id="burgerType" name="burgerType" required>
+                <option value="">Select a burger</option>
+                <option value="classic">Classic Burger</option>
+                <option value="cheese">Cheeseburger</option>
+                <option value="bacon">Bacon Burger</option>
+                <option value="veggie">Veggie Burger</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="extras">Extras:</label>
+            <div>
+                <input type="checkbox" id="extraCheese" name="extras" value="cheese">
+                <label for="extraCheese">Extra Cheese</label>
+            </div>
+            <div>
+                <input type="checkbox" id="extraBacon" name="extras" value="bacon">
+                <label for="extraBacon">Extra Bacon</label>
+            </div>
+            <div>
+                <input type="checkbox" id="fries" name="extras" value="fries">
+                <label for="fries">Add Fries</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="specialInstructions">Special Instructions:</label>
+            <textarea id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+        </div>
+        <button type="submit">Place Order</button>
+    </form>
+    <script src="../js/Adminlogin.js"></script>
+</body>
+</html>

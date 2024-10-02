@@ -150,3 +150,8 @@ input{
     cursor: pointer;  
     
 }
+#back{
+    width: 80px;
+    color: #ffffff;
+    background-color: #080710;
+}
