@@ -3,85 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet Burger Order Form</title>
-    <style>
-        body {
-            background-image: url("../img/back2.png");
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .header img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #ffd700;
-            margin-bottom: 20px;
-        }
-        .form-container {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 15px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #ffd700;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ffd700;
-            border-radius: 6px;
-            background-color: #333;
-            color: white;
-        }
-        .extras-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        .extras-item {
-            display: flex;
-            align-items: center;
-        }
-        .extras-item input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        button {
-            background-color: #ffd700;
-            color: #000;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #ffed4a;
-        }
-    </style>
+    <title>Burger Order Form</title>
+    <link rel="stylesheet" href="../style/order-from.css">
 </head>
 <body>
     <h1>Place Order</h1>
@@ -116,29 +39,6 @@
 
     <button type="submit">Place Order</button>
   </form>
-
-  <script>
-   const form = document.getElementById('burger-order-form');
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = {
-        name: form.name.value,
-        email: form.email.value,
-        phone: form.phone.value,
-        burgerChoice: form['burger-type'].value,
-        extraCheese: form['extra-cheese'].checked,
-        extraBacon: form['extra-bacon'].checked,
-        addAvocado: form['add-avocado'].checked,
-        premiumFries: form['premium-fries'].checked,
-        specialInstructions: form['special-instructions'].value
-    };
-
-    localStorage.setItem('burgerOrderData', JSON.stringify(formData));
-    alert('Order placed ! ');
-    form.reset();
-});
-  </script>
+  <script src="../js/order-form.js"></script>
 </body>
 </html>

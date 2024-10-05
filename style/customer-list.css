@@ -1,0 +1,43 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+h1 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+.table-container {
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+th {
+    background-color: #333;
+    color: #ffd700;
+    font-weight: bold;
+}
+tr:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+.checkbox-true {
+    color: #4CAF50;
+}
+.checkbox-false {
+    color: #f44336;
+}
